@@ -5,8 +5,7 @@ var mongoose= require("mongoose");
 const productSchema = {
     name:{type:String,required:true},
     Quantity:{type:Number,required:true},
-    name:{type:Number,required:true},
-    name:{type:String,enum:['Yes','No']}
-
+    Price:{type:Number,required:true},
+    inStock:{type:String,enum:['Yes','No']}
 }
 module.exports =mongoose.model("products",productSchema);
