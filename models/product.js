@@ -8,4 +8,4 @@ const productSchema = new mongoose.Schema({
     Price:{type:Number,required:true},
     inStock:{type:String,enum:['Yes','No']}
 })
-module.exports =mongoose.model("product",productSchema);
+module.exports =mongoose.model("products",productSchema);
