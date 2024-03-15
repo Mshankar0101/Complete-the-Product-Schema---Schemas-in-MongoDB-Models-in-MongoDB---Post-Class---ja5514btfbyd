@@ -2,7 +2,7 @@
 var mongoose= require("mongoose");
 
 //write your schema Here with name of schema as productSchema
-const productSchema = new mongoose.Schema({
+const productSchema =  mongoose.Schema({
     name:{type:String,required:true},
     Quantity:{type:Number,required:true},
     Price:{type:Number,required:true},
