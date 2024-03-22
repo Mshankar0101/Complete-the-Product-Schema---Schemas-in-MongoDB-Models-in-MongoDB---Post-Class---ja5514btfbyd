@@ -9,46 +9,29 @@
 //     inStock:{type:String,enum:['Yes','No']}
 // })
 // module.exports =mongoose.model("products",productSchema);
-const mongoose = require('mongoose');
 
-const productSchema = new mongoose.Schema({
+var mongoose= require("mongoose");
 
-name: {
-
-type: String,
-
-required: true
-
-},
-
-quantity: {
-
-type: Number,
-
-required: true
-
-},
-
-price: {
-
-type: Number,
-
-required: true
-
-},
-
-instock: {
-
-type: String,
-
-enum: ['Yes', 'No'],
-
-required: true
-
-}
-
+var productSchema= mongoose.Schema({
+    name:{
+        type: String,
+        required:true
+    },
+    Quantity:{
+        type: Number,
+        required:true
+    },
+    Price:{
+        type: Number,
+        required:true
+    },
+    instock:{
+        type: String,
+        eneum: ['Yes', 'No']
+    }
+    
 });
 
-module.exports = mongoose.model('Product', productSchema);
+module.exports =mongoose.model("products",productSchema);
 
 
